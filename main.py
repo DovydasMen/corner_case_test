@@ -27,6 +27,7 @@ def find_index_of_the_darkest_street_light(
     illumination_index: Dict[str, float] = {}
     all_lights: List[int] = sorted(get_list_of_all_bulbs(road_lenght=road_lenght))
     not_working_lighs: List[int] = sorted(not_working_street_lighs)
+    # code bellow needs to be reviewed. I think it's too complicated.
     for light in all_lights:
         if light not in not_working_lighs:
             continue
@@ -42,6 +43,7 @@ def find_index_of_the_darkest_street_light(
                     gaps_between_lights[f"{iterating_light} - {light}"] = intencity
         illumination_index[light] = max(gaps_between_lights.values())
 
+    # part bellow, would need to have function.
     for key in list(illumination_index.keys()):
         if illumination_index[key] < 0.01:
             illumination_index[key] = 0
