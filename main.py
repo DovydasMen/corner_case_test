@@ -1,8 +1,9 @@
-from typing import Union, List, Dict
+from typing import Dict, List, Union
+
 from utility import (
     get_list_of_all_bulbs,
-    set_values_of_ignored_illuminations,
     intensity_of_light,
+    set_values_of_ignored_illuminations,
 )
 
 

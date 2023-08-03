@@ -1,4 +1,4 @@
-from typing import Union, List, Dict
+from typing import Dict, List, Union
 
 
 def get_illumination_intencity(x: int) -> Union[int, float]:
