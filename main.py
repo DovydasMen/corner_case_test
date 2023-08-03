@@ -32,9 +32,11 @@ def find_index_of_the_darkest_street_light(
         return min(illumination_index_with_correct_values, key=illumination_index.get)
     except TypeError:
         print("Please define correct type values!")
+        return {}
     except Exception as e:
         print(f"We occured unexpected error: ", str(e))
+        return {}
 
 
 if __name__ == "__main__":
-    print(find_index_of_the_darkest_street_light(200, [4, 5, 6]))
+    print(find_index_of_the_darkest_street_light(200, [4, "a", 6]))

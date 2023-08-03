@@ -103,6 +103,7 @@ class Find_index_of_the_darkest_street_light(unittest.TestCase):
             ),
             14,
         )
+        self.assertEqual(find_index_of_the_darkest_street_light(200, [4, "a", 6]), {})
 
 
 if __name__ == "__main__":
